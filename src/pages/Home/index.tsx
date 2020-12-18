@@ -11,6 +11,7 @@ import { Wiggle } from '../../components/Wiggle';
 import { Skill } from '../../components/Skill';
 import { MaxWidth } from '../../components/MaxWidth';
 import { Work } from '../../components/Work';
+import { ContactForm } from '../../containers/contact';
 
 export function HomePage() {
   return (
@@ -96,7 +97,7 @@ export function HomePage() {
             <Skill>Javascript ES6</Skill> 
             <Skill>Typescript</Skill> 
             <Skill>NPM</Skill> 
-            <Skill>Bash</Skill> 
+            <Skill>Shell</Skill> 
             <Skill>Docker</Skill> 
             <Skill>Git</Skill> 
             <Skill>Unit Testing</Skill> 
@@ -137,7 +138,9 @@ export function HomePage() {
             <Skill>SQL / MySQL</Skill> 
             <Skill>NoSQL / MongoDB</Skill> 
             <Skill>Terraform</Skill> 
+            <Skill>Migrations</Skill> 
             <Skill>Data Ingestion</Skill> 
+            <Skill>Query Builders</Skill> 
           </Row>
         </MaxWidth>
 
@@ -191,6 +194,7 @@ export function HomePage() {
 
         <Work 
           logo={<Image src={require('../../assets/ftlogo.png')} width={250} />}
+          webImage={<Image src={require('../../assets/desktopft.jpg')} width={'100%'} />}
           description={
             <>
               My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
@@ -200,12 +204,47 @@ export function HomePage() {
 
         <Work 
           logo={<Image src={require('../../assets/eatgreen.png')} width={250} />}
+          webImage={<Image src={require('../../assets/desktopft.jpg')} width={'100%'} />}
           description={
             <>
               My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
             </>
           }
         />
+
+        <Work 
+          logo={<Image src={require('../../assets/doccontrollogo.png')} width={250} />}
+          webImage={<Image src={require('../../assets/desktopft.jpg')} width={'100%'} />}
+          description={
+            <>
+              My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
+            </>
+          }
+        />
+
+        <Work 
+          logo={<Image src={require('../../assets/doccontrollogo.png')} width={250} />}
+          webImage={<Image src={require('../../assets/desktopft.jpg')} width={'100%'} />}
+          description={
+            <>
+              My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
+            </>
+          }
+        />
+
+      </Section>
+
+      <Section>
+
+        <Wiggle>
+          <Image src={require('../../assets/astoboy.png')} width={150} />
+        </Wiggle>
+
+        <Title size="l">MESSAGE ME</Title>
+
+        <Spacer size="s" />
+
+        <ContactForm />
 
       </Section>
       

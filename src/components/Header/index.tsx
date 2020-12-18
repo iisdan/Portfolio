@@ -4,7 +4,6 @@ import { Column } from '../Column'
 import { Image } from '../Image'
 import { Particles } from '../Particles'
 import { Container } from './styles';
-// import Particles from 'react-particles-js';
 
 interface HeaderProps {
   
@@ -12,8 +11,11 @@ interface HeaderProps {
 
 export function Header(props: HeaderProps) {
   return (
+    <>
     <Container>
       <Image src={require('../../assets/logo.png')} width={300} />
+
+      {/* To get parallax we need to use 3 particlejs instances because of a bug in react-particles-js */}
       <Particles 
         size={3}
         opacity={0.5}
@@ -33,6 +35,7 @@ export function Header(props: HeaderProps) {
         speed={0.3}
       />
     </Container>
+    </>
   )
 }
   
