@@ -9,7 +9,11 @@ interface ImageProps {
 
 export function Image(props: ImageProps) {
   return (
-    <img src={props.src} width={props.width} height={props.height} />
+    <img 
+      src={props.src} 
+      style={{ maxWidth: props.width ? `${props.width}px` : undefined }} 
+      height={props.height} 
+    />
   )
 }
   

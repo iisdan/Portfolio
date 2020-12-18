@@ -10,6 +10,7 @@ import { Row } from '../../components/Row';
 import { Wiggle } from '../../components/Wiggle';
 import { Skill } from '../../components/Skill';
 import { MaxWidth } from '../../components/MaxWidth';
+import { Work } from '../../components/Work';
 
 export function HomePage() {
   return (
@@ -169,6 +170,42 @@ export function HomePage() {
             <Skill>Illustrator</Skill> 
           </Row>
         </MaxWidth>
+
+      </Section>
+
+      <Section>
+
+        <Wiggle>
+          <Image src={require('../../assets/laser.png')} width={150} />
+        </Wiggle>
+
+        <Title size="l">PORTFOLIO HIGHLIGHTS</Title>
+
+        <Spacer size="xs" />
+
+        <Paragraph>
+        My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert.
+        </Paragraph>
+
+        <Spacer size="s" />
+
+        <Work 
+          logo={<Image src={require('../../assets/ftlogo.png')} width={250} />}
+          description={
+            <>
+              My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
+            </>
+          }
+        />
+
+        <Work 
+          logo={<Image src={require('../../assets/eatgreen.png')} width={250} />}
+          description={
+            <>
+              My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
+            </>
+          }
+        />
 
       </Section>
       
