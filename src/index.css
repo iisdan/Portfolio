@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'circular-pro-book';
+  src: local('circular-pro-book'), url(./fonts/circular-pro-cufonfonts/lineto-circular-pro-book.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'circular-pro-medium';
+  src: local('circular-pro-medium'), url(./fonts/circular-pro-cufonfonts/lineto-circular-pro-medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'circular-pro-bold';
+  src: local('circular-pro-bold'), url(./fonts/circular-pro-cufonfonts/lineto-circular-pro-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'anton';
+  src: local('anton'), url(./fonts/Anton-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: circular-pro-book;
+  background-color: #07080c;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px)  }
+  50% { transform: translateY(30px); }
+  100% { transform: translateY(0px)  }
+ }
