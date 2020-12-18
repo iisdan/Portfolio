@@ -8,6 +8,8 @@ import { Title } from '../../components/Title';
 import { Image } from '../../components/Image';
 import { Row } from '../../components/Row';
 import { Wiggle } from '../../components/Wiggle';
+import { Skill } from '../../components/Skill';
+import { MaxWidth } from '../../components/MaxWidth';
 
 export function HomePage() {
   return (
@@ -31,7 +33,7 @@ export function HomePage() {
 
         <Paragraph>
           
-          My name is <b>Dan Herbert</b>, I'm a <b>full stack developer</b> in <b>Kitchener Ontario</b> with <b>11 years </b> of industry experience.
+          My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience.
           
           <br/><br/>
           
@@ -64,9 +66,109 @@ export function HomePage() {
 
         <Spacer size="s" />
 
-        <Paragraph>
-          Some stuff
-        </Paragraph>
+        <Title size="s">Featured</Title>
+        <Spacer size="s" />
+
+          <Row>
+            <Image src={require('../../assets/nodewhite.png')} height={40} />
+            <Spacer size="s" />
+            <Image src={require('../../assets/reactjs.png')} height={40} />
+            {/* <Spacer size="s" />
+            <Image src={require('../../assets/angular.png')} height={40} /> */}
+            <Spacer size="s" />
+            <Image src={require('../../assets/php.png')} height={40} />
+            <Spacer size="s" />
+            <Image src={require('../../assets/mongo.png')} height={40} />
+            <Spacer size="s" />
+            <Image src={require('../../assets/mysql.png')} height={40} />
+            <Spacer size="s" />
+            <Image src={require('../../assets/firebase.png')} height={40} />
+          </Row>
+
+        <Spacer size="s" />
+
+        <Title size="s">General</Title>
+        <Spacer size="xs" />
+
+        <MaxWidth>
+          <Row>
+            <Skill>Javascript ES6</Skill> 
+            <Skill>Typescript</Skill> 
+            <Skill>NPM</Skill> 
+            <Skill>Bash</Skill> 
+            <Skill>Docker</Skill> 
+            <Skill>Git</Skill> 
+            <Skill>Unit Testing</Skill> 
+            <Skill>Bundling</Skill> 
+          </Row>
+        </MaxWidth>
+
+        <Spacer size="s" />
+
+        <Title size="s">Front End</Title>
+        <Spacer size="xs" />
+
+        <MaxWidth>
+          <Row>
+            <Skill>React</Skill> 
+            <Skill>React Native</Skill> 
+            <Skill>Redux</Skill> 
+            <Skill>AngularJs</Skill> 
+            <Skill>Angular</Skill> 
+            <Skill>HTML 5</Skill> 
+            <Skill>JSX</Skill> 
+            <Skill>CSS 3</Skill> 
+            <Skill>JSS</Skill> 
+            <Skill>Cordova</Skill> 
+          </Row>
+        </MaxWidth>
+
+        <Spacer size="s" />
+
+        <Title size="s">Back End</Title>
+        <Spacer size="xs" />
+
+        <MaxWidth>
+          <Row>
+            <Skill>NodeJs</Skill> 
+            <Skill>Express</Skill> 
+            <Skill>PHP</Skill> 
+            <Skill>SQL / MySQL</Skill> 
+            <Skill>NoSQL / MongoDB</Skill> 
+            <Skill>Terraform</Skill> 
+            <Skill>Data Ingestion</Skill> 
+          </Row>
+        </MaxWidth>
+
+        <Spacer size="s" />
+
+        <Title size="s">Other Notable Libraries</Title>
+        <Spacer size="xs" />
+
+        <MaxWidth>
+          <Row>
+            <Skill>Styled Components</Skill> 
+            <Skill>Material UI</Skill> 
+            <Skill>Immutable</Skill> 
+            <Skill>MomentJs</Skill> 
+            <Skill>Ffmpeg</Skill> 
+            <Skill>Twillio</Skill> 
+            <Skill>Font Awesome</Skill> 
+          </Row>
+        </MaxWidth>
+
+        <Spacer size="s" />
+
+        <Title size="s">Design</Title>
+        <Spacer size="xs" />
+
+        <MaxWidth>
+          <Row>
+            <Skill>Photoshop</Skill> 
+            <Skill>After Effects</Skill> 
+            <Skill>Illustrator</Skill> 
+          </Row>
+        </MaxWidth>
 
       </Section>
       

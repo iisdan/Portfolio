@@ -6,4 +6,5 @@ export const FlexRow = styled.div<{ horizontalAlign?: 'left' | 'center' | 'right
   width: 100%;
   align-items: ${(props) => props.horizontalAlign || 'center'};
   justify-content: ${(props) => props.verticalAlign || 'center'};
+  flex-wrap: wrap;
 `;
