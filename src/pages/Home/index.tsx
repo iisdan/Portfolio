@@ -13,6 +13,7 @@ import { MaxWidth } from '../../components/MaxWidth';
 import { Work } from '../../components/Work';
 import { Column } from '../../components/Column';
 import { Copyright } from '../../components/Copyright';
+import { Button } from '../../components/Button';
 
 interface SkillSet {
   title: string;
@@ -81,9 +82,15 @@ export function HomePage() {
           <Spacer size="s" />
 
           <Row>
-            <Image src={require('../../assets/github.png')} height={35} />
+            <a target="_blank" href="https://github.com/iisdan">
+              <Image src={require('../../assets/github.png')} height={35} />
+            </a>
+
             <Spacer size="s" />
-            <Image src={require('../../assets/linkedin.png')} height={30} />
+
+            <a target="_blank" href="https://www.linkedin.com/in/dan-herbert-7889b654/">
+              <Image src={require('../../assets/linkedin.png')} height={30} />
+            </a>
           </Row>
 
         </Paragraph>
@@ -165,6 +172,13 @@ export function HomePage() {
           description={
             <>
               FlameTask is an advanced preventative maintenance application for web and mobile. Equipment can be added and inspected with complex service types that change based on rules and other services. Technicians are given a list and map of all equipment needed to be inspected or serviced. Once found, the technician will scan the barcode or NFC tag to inspect the equipment and see any other due service. FlameTask gives a variety of PDF and Excel reports for clients and internal use.
+              <br/><br/>
+
+              <Row horizontalAlign="center">
+                <a target="_blank" href="http://flametask.com">
+                  <Button>Visit</Button>
+                </a>
+              </Row>
             </>
           }
         />

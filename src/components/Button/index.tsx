@@ -3,13 +3,13 @@ import { Container } from './styles';
 
 interface ButtonProps {
   children: React.ReactNode;
-  onClick: () => any;
+  onClick?: () => any;
 }
 
 export function Button(props: ButtonProps) {
   return (
     <Container 
-      onClick={() => props.onClick()} 
+      onClick={() => props.onClick && props.onClick()} 
     >
       {props.children}
     </Container>
