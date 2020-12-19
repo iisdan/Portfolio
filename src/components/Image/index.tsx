@@ -12,7 +12,7 @@ export function Image(props: ImageProps) {
   return (
     <img 
       src={props.src} 
-      alt="image"
+      alt="todo make this alt work"
       style={{ 
         width: props.width ? width : undefined,
         maxWidth: '100%',
