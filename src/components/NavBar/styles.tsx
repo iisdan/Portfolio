@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 60px;
+  min-height: 60px;
   background-color: rgba(0,0,0,0.5);
   position: fixed;
   top: 0px;
@@ -26,6 +26,11 @@ export const NavItem = styled.div`
   text-decoration: none;
   &:hover {
     opacity: 1;
+  }
+  @media (max-width: 768px) {
+    min-width: auto;
+    padding: 10px;
+    font-size: 14px;
   }
 `;
 
