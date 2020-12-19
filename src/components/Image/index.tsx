@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { isStringLiteral } from 'typescript';
-import { FlexColumn } from './styles';
 
 interface ImageProps {
   src: string;
@@ -14,6 +12,7 @@ export function Image(props: ImageProps) {
   return (
     <img 
       src={props.src} 
+      alt="image"
       style={{ 
         width: props.width ? width : undefined,
         maxWidth: '100%',

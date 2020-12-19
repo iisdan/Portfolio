@@ -1,8 +1,6 @@
 import * as React from 'react';
-import { Row } from '../Row'
-import { Column } from '../Column'
-import { Image } from '../Image'
-import { Particles } from '../Particles'
+import { Image } from '../Image';
+import { Particles } from '../Particles';
 import { Container } from './styles';
 
 interface HeaderProps {
