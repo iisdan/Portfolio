@@ -82,13 +82,13 @@ export function HomePage() {
           <Spacer size="s" />
 
           <Row>
-            <a target="_blank" href="https://github.com/iisdan">
+            <a target="_blank" rel="noreferrer" href="https://github.com/iisdan">
               <Image src={require('../../assets/github.png')} height={35} />
             </a>
 
             <Spacer size="s" />
 
-            <a target="_blank" href="https://www.linkedin.com/in/dan-herbert-7889b654/">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dan-herbert-7889b654/">
               <Image src={require('../../assets/linkedin.png')} height={30} />
             </a>
           </Row>
@@ -175,7 +175,7 @@ export function HomePage() {
               <br/><br/>
 
               <Row horizontalAlign="center">
-                <a target="_blank" href="http://flametask.com">
+                <a target="_blank" rel="noreferrer" href="http://flametask.com">
                   <Button>Visit</Button>
                 </a>
               </Row>
