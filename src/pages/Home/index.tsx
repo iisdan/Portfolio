@@ -161,7 +161,7 @@ export function HomePage() {
         <Spacer size="xs" />
 
         <Paragraph>
-          My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert.
+          Here are just a few of my most notable freelance and personal projects.
         </Paragraph>
 
         <Spacer size="s" />
