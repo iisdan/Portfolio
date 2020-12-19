@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "flametask-promo-site",
     "public": "build",
     "ignore": [
       "firebase.json",
