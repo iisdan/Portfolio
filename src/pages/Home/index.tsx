@@ -47,6 +47,8 @@ export function HomePage() {
   return (
     <>
 
+      <div className="scroll_top" />
+
       <NavBar />
       
       <Header />
@@ -152,7 +154,7 @@ export function HomePage() {
         <Spacer size="xs" />
 
         <Paragraph>
-        My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert.
+          My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert.
         </Paragraph>
 
         <Spacer size="s" />
@@ -162,37 +164,57 @@ export function HomePage() {
           webImage={<Image src={require('../../assets/desktopft.jpg')} width={'100%'} />}
           description={
             <>
-              My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
+              FlameTask is an advanced preventative maintenance application for web and mobile. Equipment can be added and inspected with complex service types that change based on rules and other services. Technicians are given a list and map of all equipment needed to be inspected or serviced. Once found, the technician will scan the barcode or NFC tag to inspect the equipment and see any other due service. FlameTask gives a variety of PDF and Excel reports for clients and internal use.
             </>
           }
         />
 
         <Work 
           logo={<Image src={require('../../assets/eatgreen.png')} width={250} />}
-          webImage={<Image src={require('../../assets/desktopft.jpg')} width={'100%'} />}
+          webImage={<Image src={require('../../assets/eatgreenweb.jpg')} width={'100%'} />}
           description={
             <>
-              My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
+              Eat Green Organics is an organic grocery ordering web site that features new and recurring orders. Once ordered, the software will prepare sorting lists and a map for delivery drivers as well as administrative documents.
             </>
           }
         />
 
         <Work 
           logo={<Image src={require('../../assets/doccontrollogo.png')} width={250} />}
-          webImage={<Image src={require('../../assets/desktopft.jpg')} width={'100%'} />}
+          webImage={<Image src={require('../../assets/doccontrolweb.jpg')} width={'100%'} />}
           description={
             <>
-              My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
+              Document Control allows users to use advanced search options to quickly find documents within thousands of records. Users can sign out a document and request changes to be approved by administrators. Once approved it will keep a new version of metadata with the new file.
             </>
           }
         />
 
         <Work 
-          logo={<Image src={require('../../assets/doccontrollogo.png')} width={250} />}
-          webImage={<Image src={require('../../assets/desktopft.jpg')} width={'100%'} />}
+          logo={<Image src={require('../../assets/crowdcomlogo.png')} width={250} />}
+          webImage={<Image src={require('../../assets/crowdcomweb.jpg')} width={'100%'} />}
           description={
             <>
-              My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. My name is Dan Herbert, I'm a Full Stack Developer in Kitchener Ontario with 11 years of industry experience. 
+              CrowdCom is a website for suggesting new ideas for companies. Other customers can vote on ideas and companies can then reply and give out rewards. 
+            </>
+          }
+        />
+
+        <Work 
+          logo={<Image src={require('../../assets/freelancelogo.png')} width={250} />}
+          webImage={<Image src={require('../../assets/webfreelance.jpg')} width={'100%'} />}
+          description={
+            <>
+              Freelance unity is an interactive contract between a freelancer and a client. Projects have stages that include a completion list and agreed upon payment.
+            </>
+          }
+        />
+
+        <Work 
+          logo={<Image src={require('../../assets/highscorelogo.png')} width={250} />}
+          webImage={<Image src={require('../../assets/highscoreweb.jpg')} width={'100%'} />}
+          description={
+            <>
+              An application for tracking and displaying leaderboards on a TV in arcades and tournaments
             </>
           }
         />

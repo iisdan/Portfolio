@@ -10,7 +10,7 @@ interface NavBarProps {
 
 export function NavBar(props: NavBarProps) {
   const scrollOptions = {
-    verticalOffset: -90,
+    verticalOffset: -250,
   }
   return (
     <Container>
@@ -37,8 +37,15 @@ export function NavBar(props: NavBarProps) {
         >
           Skillset
         </NavItem>
-
-        <NavItem>
+        
+        <NavItem 
+          onClick={() => {
+            const aboutMe = document.querySelector('.scroll_top');
+            if (aboutMe) {
+              animateScrollTo(aboutMe, scrollOptions)
+            }
+          }}
+        >
           <Image 
             src={require('../../assets/smallLogo.png')} 
             width={40}
