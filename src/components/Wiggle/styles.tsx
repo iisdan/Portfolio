@@ -9,6 +9,5 @@ export const Container = styled.div`
   animation-fill-mode: initial;
   animation-play-state: initial;
   animation-name: float;
-  z-index: 99;
   position:relative;
 `;

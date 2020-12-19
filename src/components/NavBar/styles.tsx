@@ -23,8 +23,12 @@ export const NavItem = styled.div`
   padding: 20px;
   font-size: 16px;
   text-align: center;
+  text-decoration: none;
   &:hover {
     opacity: 1;
   }
 `;
 
+export const ExternalLink = styled.a`
+  text-decoration: none;
+`;

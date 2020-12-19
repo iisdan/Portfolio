@@ -6,6 +6,7 @@ interface ImageProps {
   src: string;
   width?: number | string;
   height?: number | string;
+  opacity?: number;
 }
 
 export function Image(props: ImageProps) {
@@ -16,6 +17,7 @@ export function Image(props: ImageProps) {
       style={{ 
         width: props.width ? width : undefined,
         maxWidth: '100%',
+        opacity: props.opacity || 1,
       }} 
       height={props.height} 
     />

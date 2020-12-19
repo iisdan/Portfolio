@@ -11,9 +11,39 @@ import { Wiggle } from '../../components/Wiggle';
 import { Skill } from '../../components/Skill';
 import { MaxWidth } from '../../components/MaxWidth';
 import { Work } from '../../components/Work';
-import { ContactForm } from '../../containers/contact';
+import { Column } from '../../components/Column';
+import { Copyright } from '../../components/Copyright';
+
+interface SkillSet {
+  title: string;
+  skills: string[];
+}
 
 export function HomePage() {
+
+  const skills: SkillSet[] = [
+    {
+      title: 'Basic',
+      skills: ['Javascript ES6', 'Typescript', 'NPM', 'Shell', 'Docker', 'Git', 'Unit Testing', 'Bundling'],
+    },
+    {
+      title: 'Front End',
+      skills: ['React', 'React Native', 'Redux', 'AngularJs', 'Angular', 'HTML 5', 'JSX', 'CSS 3', 'JSS', 'Cordova'],
+    },
+    {
+      title: 'Back End',
+      skills: ['NodeJs', 'Express', 'PHP', 'SQL / MySQL', 'NoSQL / MongoDB', 'Terraform', 'Migrations', 'Data Ingestion', 'Query Builders'],
+    },
+    {
+      title: 'Other Notable Libraries',
+      skills: ['Styled Components', 'Material UI', 'Immutable', 'MomentJs', 'Ffmpeg', 'Twillio', 'Font Awesome'],
+    },
+    {
+      title: 'Design',
+      skills: ['Photoshop', 'After Effects', 'Illustrator'],
+    },
+  ];
+
   return (
     <>
 
@@ -29,7 +59,7 @@ export function HomePage() {
           <Image src={require('../../assets/astoboy.png')} width={150} />
         </Wiggle>
 
-        <Title size="l">ABOUT ME</Title>
+        <Title size="l" className="scroll_about_me">ABOUT ME</Title>
 
         <Spacer size="s" />
 
@@ -64,7 +94,7 @@ export function HomePage() {
           <Image src={require('../../assets/rocket.png')} width={150} />
         </Wiggle>
 
-        <Title size="l">SKILLSET</Title>
+        <Title size="l" className="scroll_skillset">SKILLSET</Title>
 
         <Spacer size="s" />
 
@@ -92,87 +122,22 @@ export function HomePage() {
         <Title size="s">General</Title>
         <Spacer size="xs" />
 
-        <MaxWidth>
-          <Row>
-            <Skill>Javascript ES6</Skill> 
-            <Skill>Typescript</Skill> 
-            <Skill>NPM</Skill> 
-            <Skill>Shell</Skill> 
-            <Skill>Docker</Skill> 
-            <Skill>Git</Skill> 
-            <Skill>Unit Testing</Skill> 
-            <Skill>Bundling</Skill> 
-          </Row>
-        </MaxWidth>
+        {skills.map((skillset) => (
+          <>
+            <Title size="s">{skillset.title}</Title>
+            <Spacer size="xs" />
 
-        <Spacer size="s" />
+            <MaxWidth>
+              <Row>
+                {skillset.skills.map((skill) => (
+                  <Skill>{skill}</Skill> 
+                ))}
+              </Row>
+            </MaxWidth>
 
-        <Title size="s">Front End</Title>
-        <Spacer size="xs" />
-
-        <MaxWidth>
-          <Row>
-            <Skill>React</Skill> 
-            <Skill>React Native</Skill> 
-            <Skill>Redux</Skill> 
-            <Skill>AngularJs</Skill> 
-            <Skill>Angular</Skill> 
-            <Skill>HTML 5</Skill> 
-            <Skill>JSX</Skill> 
-            <Skill>CSS 3</Skill> 
-            <Skill>JSS</Skill> 
-            <Skill>Cordova</Skill> 
-          </Row>
-        </MaxWidth>
-
-        <Spacer size="s" />
-
-        <Title size="s">Back End</Title>
-        <Spacer size="xs" />
-
-        <MaxWidth>
-          <Row>
-            <Skill>NodeJs</Skill> 
-            <Skill>Express</Skill> 
-            <Skill>PHP</Skill> 
-            <Skill>SQL / MySQL</Skill> 
-            <Skill>NoSQL / MongoDB</Skill> 
-            <Skill>Terraform</Skill> 
-            <Skill>Migrations</Skill> 
-            <Skill>Data Ingestion</Skill> 
-            <Skill>Query Builders</Skill> 
-          </Row>
-        </MaxWidth>
-
-        <Spacer size="s" />
-
-        <Title size="s">Other Notable Libraries</Title>
-        <Spacer size="xs" />
-
-        <MaxWidth>
-          <Row>
-            <Skill>Styled Components</Skill> 
-            <Skill>Material UI</Skill> 
-            <Skill>Immutable</Skill> 
-            <Skill>MomentJs</Skill> 
-            <Skill>Ffmpeg</Skill> 
-            <Skill>Twillio</Skill> 
-            <Skill>Font Awesome</Skill> 
-          </Row>
-        </MaxWidth>
-
-        <Spacer size="s" />
-
-        <Title size="s">Design</Title>
-        <Spacer size="xs" />
-
-        <MaxWidth>
-          <Row>
-            <Skill>Photoshop</Skill> 
-            <Skill>After Effects</Skill> 
-            <Skill>Illustrator</Skill> 
-          </Row>
-        </MaxWidth>
+            <Spacer size="s" />
+          </>
+        ))}
 
       </Section>
 
@@ -182,7 +147,7 @@ export function HomePage() {
           <Image src={require('../../assets/laser.png')} width={150} />
         </Wiggle>
 
-        <Title size="l">PORTFOLIO HIGHLIGHTS</Title>
+        <Title size="l" className="scroll_portfolio">PORTFOLIO HIGHLIGHTS</Title>
 
         <Spacer size="xs" />
 
@@ -236,18 +201,20 @@ export function HomePage() {
 
       <Section>
 
-        <Wiggle>
-          <Image src={require('../../assets/astoboy.png')} width={150} />
-        </Wiggle>
+        <Column>
+        
+          <Image src={require('../../assets/logo.png')} width={200} opacity={0.5} />
 
-        <Title size="l">MESSAGE ME</Title>
+          <Spacer size="xs" />
 
-        <Spacer size="s" />
+          <Copyright />
 
-        <ContactForm />
+          <Spacer size="s" />
+
+        </Column>
 
       </Section>
-      
+
     </>
   )
 }
